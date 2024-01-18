@@ -42,3 +42,9 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+/lib/ui/home/permission_handler_state.freezed.dart
+/lib/ui/home/permission_handler_view_model.g.dart
+/lib/ui/ waiting_tile_checker/waiting_tile_checker_state.freezed.dart
+/lib/ui/ waiting_tile_checker/waiting_tile_checker_view_model.g.dart
+/lib/ui/home/home_state.freezed.dart
+/lib/ui/home/home_view_model.g.dart

@@ -1,5 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:hooks_riverpod/hooks_riverpod.dart';
+import 'package:mahjong_assistant_a/app_navigator.dart';
 
 void main() {
-  runApp(const Placeholder());
+  runApp(
+    const ProviderScope(
+      child: AppNavigator(),
+    ),
+  );
 }
