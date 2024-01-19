@@ -7,8 +7,6 @@ part 'waiting_tile_checker_state.freezed.dart';
 class WaitingTileCheckerState with _$WaitingTileCheckerState {
   const factory WaitingTileCheckerState({
     @Default(null)
-    int? id,
-    @Default(null)
     File? picture,
     @Default('')
     String response,

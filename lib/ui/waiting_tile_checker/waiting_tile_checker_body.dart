@@ -25,6 +25,18 @@ class WaitingTileCheckerBody extends HookWidget {
   }
 
   Widget onData(WaitingTileCheckerState state) {
-    return Image.file(state.picture!);
+    return SingleChildScrollView(
+      child: Column(
+        children: [
+          Image.file(state.picture!),
+          const SizedBox(height: 10,),
+
+          Text(state.response),
+          const SizedBox(height: 10,),
+
+          if(state.isLoading) const Center(child: CircularProgressIndicator()),
+        ],
+      ),
+    );
   }
 }
