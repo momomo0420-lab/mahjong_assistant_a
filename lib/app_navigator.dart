@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:mahjong_assistant_a/ui/%20waiting_tile_checker/waiting_tile_checker_screen.dart';
 import 'package:mahjong_assistant_a/ui/home/home_screen.dart';
+import 'package:mahjong_assistant_a/ui/waiting_tile_checker/waiting_tile_checker_screen.dart';
 
 enum AppScreens {
   home('/'),
@@ -49,7 +49,7 @@ class AppNavigator extends StatelessWidget {
     GoRouterState state,
   ) {
     return HomeScreen(
-      navigateNextScreen: () => context.go(AppScreens.waitingTileChecker.path),
+      navigateNextScreen: () => context.push(AppScreens.waitingTileChecker.path),
     );
   }
 
@@ -57,6 +57,6 @@ class AppNavigator extends StatelessWidget {
     BuildContext context,
     GoRouterState state,
   ) {
-    return WaitingTileCheckerScreen();
+    return const WaitingTileCheckerScreen();
   }
 }
